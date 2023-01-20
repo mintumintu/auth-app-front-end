@@ -1,0 +1,19 @@
+.nav-container{
+    background-color: black;
+    color:white;
+}
+.nav-container ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navlink{
+    text-decoration: none;
+    color:white;
+    margin-left:20px;
+    border:2px solid white;
+    padding:10px;
+}
+.firstlink{
+    margin-left: 75vw;
+}

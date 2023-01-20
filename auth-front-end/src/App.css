@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+body{
+  background-image:linear-gradient(to right,rgb(76, 73, 146),rgb(19, 185, 231));
+}

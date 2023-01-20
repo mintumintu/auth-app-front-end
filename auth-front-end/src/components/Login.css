@@ -19,6 +19,8 @@
     font-size: 1.2em;
     border-radius: 0.2rem;
     cursor: pointer;
+    background-image: linear-gradient(to left,rgb(7, 128, 33),rgb(114, 155, 125));
+    color:white;
   }
   button:hover {
     background-color: #c5c5c5;
