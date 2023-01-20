@@ -2,7 +2,7 @@ import "./Login.css";
 import { useState } from "react";
 
 function Login() {
-  const [name, setName] = useState("");
+//   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message,setMessage] = useState("");
@@ -10,23 +10,23 @@ function Login() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:4000/register", {
+      let res = await fetch("http://localhost:4000/login", {
         headers: {
             'Content-Type': 'application/json'
             // 'Content-Type': 'application/x-www-form-urlencoded',
           },
         method: "POST",
         body: JSON.stringify({
-          name: name,
+        //   name: name,
           email: email,
           password: password,
         }),
       });
       let resJson = await res.json();
       if (res.status === 200) {
-        setName("");
+        // setName("");
         setEmail("");
-        setMessage("User created successfully");
+        setMessage("User Loggined successfully");
       } else {
         setMessage("Some error occured");
       }
@@ -38,12 +38,12 @@ function Login() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
-        <input
+        {/* <input
           type="text"
           value={name}
           placeholder="Name"
           onChange={(e) => setName(e.target.value)}
-        />
+        /> */}
         <input
           type="text"
           value={email}
@@ -57,7 +57,7 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <button type="submit">Create</button>
+        <button type="submit">Login</button>
 
         <div className="message">{message ? <p>{message}</p> : null}</div>
       </form>
