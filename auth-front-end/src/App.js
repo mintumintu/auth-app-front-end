@@ -5,6 +5,7 @@ import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import Register from './components/Register';
 import Navbar from './components/Navbar';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       </Route>
       <Route path='/Register' exact>
         <Register />
+      </Route>
+      <Route path='/secret' exact>
+        <Dashboard />
       </Route>
     </Switch>
   </Router>

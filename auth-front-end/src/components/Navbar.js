@@ -7,9 +7,10 @@ const Navbar = ()=>{
         <>
         <div className='nav-container'>
             <ul>
-                <li><h1>NoteBox</h1></li>
+                <li><h1>Auth Demo</h1></li>
                 <li><Link to='/register' className='navlink firstlink'>Register</Link></li>
                 <li><Link to='/login' className='navlink'>Login</Link></li>
+                <li><Link to='/secret' className='navlink'>Dashboard</Link></li>
             </ul>
         </div>
         </>
