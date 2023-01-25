@@ -6,10 +6,14 @@ import Home from './components/Home';
 import Register from './components/Register';
 import Navbar from './components/Navbar';
 import Dashboard from './components/Dashboard';
+import Data from './components/Data';
 
 function App() {
   return (
+    <>
     <Login />
+    <Data />
+    </>
     // <Routes>
     //   <Route path='/' element={<><Navbar /><Login /></>} />
     //   <Route path='/register' element={<Register />} />

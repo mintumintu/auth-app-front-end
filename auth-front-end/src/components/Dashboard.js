@@ -10,9 +10,9 @@ fetch('http://localhost:4000/secret',{
     },
     method:"GET",
     body:{
-        
+        email:"test2@test.com"
     }
-}).then(response=>response.json()).then(response=>setEmail(response.email))
+}).then((response)=>response.json()).then((user)=>console.log(user.email))
     return (<>
             <h1>Hello {email}</h1>
     </>);
